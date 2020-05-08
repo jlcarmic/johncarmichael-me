@@ -1,0 +1,11 @@
+{
+  "name": "johncarmichael-me",
+  "version": "1.0.0",
+  "description": "My Portfolio Site",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "aws s3 cp . s3://johncarmichael.me/ --recursive --exclude 'package.json' --exclude '*git*' --acl public-read --profile portfolio-deploy"
+  },
+  "author": "John Carmichael <jlcarmic@gmail.com>",
+  "license": "ISC"
+}
